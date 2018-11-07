@@ -15,10 +15,10 @@ public class Fact {
     private static SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
     private Date now;
-    private String  morningString = "06:00:00";
-    private String dayString = "09:00:00";
-    private String eveningString = "19:00:00";
-    private String nightString = "23:00:00";
+    private String  morningString = "05:59:59";
+    private String dayString = "08:59:59";
+    private String eveningString = "18:59:59";
+    private String nightString = "22:59:59";
     private Date morning;
     private Date day;
     private Date evening;
@@ -30,6 +30,16 @@ public class Fact {
         todayDate = new Date();
         Locale.getDefault();
         resourceBundle = ResourceBundle.getBundle("bundle", Converter.UTF_8);
+    }
+
+    public Fact(String time) throws ParseException {
+        todayDate = dateFormat.parse(time);
+        Locale.getDefault();
+        resourceBundle = ResourceBundle.getBundle("bundle", Converter.UTF_8);
+    }
+
+    public Date getTodayDate() {
+        return todayDate;
     }
 
     public  String getFact() throws ParseException {

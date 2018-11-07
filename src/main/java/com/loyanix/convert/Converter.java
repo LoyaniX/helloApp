@@ -32,10 +32,6 @@ public class Converter extends ResourceBundle.Control {
         return charset;
     }
 
-    public void setCharset(Charset charset) {
-        this.charset = charset;
-    }
-
     @Override
     public ResourceBundle newBundle(String baseName, Locale locale,
                                     String format, ClassLoader loader, boolean reload)
