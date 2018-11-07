@@ -50,16 +50,20 @@ public class Fact {
         night = dateFormat.parse(nightString);
         if(now.after(morning)&&now.before(day)){
             logger.info(resourceBundle.getString("morning"));
-            return resourceBundle.getString("morning");
+            System.out.println(resourceBundle.getString("morning"));
+            return "morning";
         }else if(now.after(day)&&now.before(evening)){
             logger.info(resourceBundle.getString("day"));
-            return resourceBundle.getString("day");
+            System.out.println(resourceBundle.getString("day"));
+            return "day";
         }else if(now.after(evening)&&now.before(night)){
             logger.info(resourceBundle.getString("evening"));
-            return resourceBundle.getString("evening");
+            System.out.println(resourceBundle.getString("evening"));
+            return "evening";
         }else {
             logger.info(resourceBundle.getString("night"));
-            return resourceBundle.getString("night");
+            System.out.println(resourceBundle.getString("night"));
+            return "night";
         }
     }
 

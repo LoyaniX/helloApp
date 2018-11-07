@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         Fact fact = new Fact();
         try {
-            System.out.println(fact.getFact());
+            fact.getFact();
         } catch (ParseException e) {
             logger.error("Parse error", e);
             e.printStackTrace();
