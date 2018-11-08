@@ -7,3 +7,5 @@
 2018-11-08 00:26:43,785  INFO [main] - com.loyanix.Fact.getFact 56 - Добрый день, Мир!
 2018-11-08 00:26:43,787  INFO [main] - com.loyanix.Fact.getFact 64 - Доброй ночи, Мир!
 2018-11-08 00:27:06,594  INFO [main] - com.loyanix.Fact.getFact 64 - Доброй ночи, Мир!
+2018-11-08 00:42:10,586  INFO [main] - com.loyanix.Main.main 22 - Доброй ночи, Мир!
+2018-11-08 06:42:47,343  INFO [main] - com.loyanix.Main.main 22 - Доброе утро, Мир!
